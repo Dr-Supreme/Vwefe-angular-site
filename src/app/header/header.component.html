@@ -1,0 +1,18 @@
+<main>
+    <div>
+      <h1 class="header">Welcome to the website of Isaac Ojigho</h1>
+    
+      <ul class="nav">
+        @for (link of navLinks; track link.route) {
+          <li>
+            <a [routerLink]="link.route">{{ link.label }}</a>
+          </li>
+        }
+      </ul>
+    
+      <nav>
+       
+      </nav>
+      <router-outlet></router-outlet> <!-- Added router outlet -->
+    </div>
+        </main>
