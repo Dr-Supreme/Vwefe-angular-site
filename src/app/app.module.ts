@@ -11,6 +11,7 @@ import { ContactMeComponent } from './contact/contact-me/contact-me.component';
 import { LoginPageComponent } from './login/login-page/login-page.component';
 import { HomeComponent } from './overview/home/home.component';
 import { FormsModule } from '@angular/forms';
+import { PokedexComponent } from './projects/pokedex/pokedex.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     AboutMeComponent,
     ContactMeComponent,
     LoginPageComponent,
-    HomeComponent
+    HomeComponent,
+    PokedexComponent
   ],
   imports: [
     BrowserModule,

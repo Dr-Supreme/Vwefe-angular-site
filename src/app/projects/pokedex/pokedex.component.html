@@ -1,0 +1,21 @@
+<div class="pokedex-container">
+    <h1>Pokedex Search</h1>
+  
+    <p>What is your Pokemon's name:</p>
+    <input [(ngModel)]="pokemonName" placeholder="Enter Pokemon name" />
+    <button (click)="getPokemon()">Fetch Pokemon</button>
+  
+    <!-- Show error if not found -->
+    <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+  
+    <!-- Show Pokemon info -->
+    <div *ngIf="pokemonFound && pokedex" class="pokemon-card">
+      <h2>{{ pokedex.name | titlecase }}</h2>
+      <img [src]="pokedex.imageUrl" [alt]="pokedex.name" />
+  
+      <p><strong>Abilities:</strong> {{ pokedex.abilities.join(', ') }}</p>
+      <p><strong>Types:</strong> {{ pokedex.types.join(', ') }}</p>
+      <p><strong>Height:</strong> {{ pokedex.height }}</p>
+    </div>
+  </div>
+  

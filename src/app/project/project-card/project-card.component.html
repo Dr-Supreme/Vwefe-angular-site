@@ -1,4 +1,4 @@
-<div class="card" [routerLink]="project.route">
+<div class="card" [routerLink]="project.route" (click)="navigateToProject()">
     <img [src]="project.imageUrl" [alt]="project.title" class="card-image" />
   
     <div class="card-content">

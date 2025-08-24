@@ -1,5 +1,6 @@
 export interface ProjectModel {
-title: string;
+  id: string
+  title: string;
   description: string;
   imageUrl: string;
   route: string; // this will be the router link

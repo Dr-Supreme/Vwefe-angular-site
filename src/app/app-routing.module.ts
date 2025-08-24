@@ -5,6 +5,7 @@ import { HomeComponent } from './overview/home/home.component';
 import { ProjectsComponent } from './projects/projects/projects.component';
 import { AboutMeComponent } from './about/about-me/about-me.component';
 import { ContactMeComponent } from './contact/contact-me/contact-me.component';
+import { PokedexComponent } from './projects/pokedex/pokedex.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path:'projects',
     component: ProjectsComponent,
+  },
+  {
+    path: 'projects/pokedex',
+    component: PokedexComponent // This should be a specific project component, but for now we use the same component
   },
   {
     path: 'about',

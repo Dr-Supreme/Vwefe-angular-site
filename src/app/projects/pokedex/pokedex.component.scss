@@ -1,0 +1,40 @@
+.pokedex-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    text-align: center;
+  
+    input {
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  
+    button {
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+  
+    .pokemon-card {
+      margin-top: 2rem;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  
+      img {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        margin-bottom: 1rem;
+      }
+  
+      p {
+        margin: 0.5rem 0;
+      }
+    }
+  
+    .error {
+      color: red;
+      margin-top: 1rem;
+    }
+  }
+  

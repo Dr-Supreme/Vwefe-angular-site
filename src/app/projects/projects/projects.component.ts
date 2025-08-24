@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProjectModel } from '../../core/models/project-model';
+import { ActivatedRoute } from '@angular/router';
+import { ProjectService } from '../../core/services/project.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-projects',
@@ -7,25 +10,15 @@ import { ProjectModel } from '../../core/models/project-model';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
-export class ProjectsComponent {
-    projects: ProjectModel[] = [
-    {
-      title: 'Project One',
-      description: 'This is the first project.',
-      imageUrl: 'assets/images/project1.jpg',
-      route: '/projects/project-one'
-    },
-    {
-      title: 'Project Two',
-      description: 'This is the second project.',
-      imageUrl: 'assets/images/project2.jpg',
-      route: '/projects/project-two'
-    },
-    {
-      title: 'Project Three',
-      description: 'This is the third project.',
-      imageUrl: 'assets/images/project3.jpg',
-      route: '/projects/project-three'
+export class ProjectsComponent implements OnInit{
+    projects$!: Observable<ProjectModel[]>;
+
+  constructor(
+    private projectService: ProjectService
+  ) {}
+
+  ngOnInit(): void {
+      this.projects$ = this.projectService.getProjects();
     }
-  ]
+
 }
