@@ -6,6 +6,7 @@ import { ProjectsComponent } from './projects/projects/projects.component';
 import { AboutMeComponent } from './about/about-me/about-me.component';
 import { ContactMeComponent } from './contact/contact-me/contact-me.component';
 import { PokedexComponent } from './projects/pokedex/pokedex.component';
+import { MatrixComponent } from './projects/matrix/matrix.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
     component: PokedexComponent // This should be a specific project component, but for now we use the same component
   },
   {
+    path: 'projects/matrix',
+    component: MatrixComponent
+  },
+  {
     path: 'about',
     component: AboutMeComponent
   },
@@ -38,7 +43,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    enableTracing: true
+    enableTracing: false
   })],
   exports: [RouterModule]
 })

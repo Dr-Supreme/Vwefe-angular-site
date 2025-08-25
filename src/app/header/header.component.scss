@@ -10,13 +10,20 @@
     li {
       a {
         text-decoration: none;
-        color: #333;
+        color: #000000;
         font-weight: 500;
         transition: color 0.2s ease;
   
         &:hover {
-          color: #007bff;
+          color: #44ff00;
         }
       }
     }
   }
+  .active-link{
+    // color: #007bff; // Highlight active link
+    // font-weight: bold; // Make active link bold
+    font-size: 16px;
+    text-shadow: 3px 3px 3px rgb(255, 0, 0); // Add subtle shadow for emphasis
+} 
+//this will add a highlight over the current header bar we are at

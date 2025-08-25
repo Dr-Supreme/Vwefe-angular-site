@@ -12,6 +12,8 @@ import { LoginPageComponent } from './login/login-page/login-page.component';
 import { HomeComponent } from './overview/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { PokedexComponent } from './projects/pokedex/pokedex.component';
+import { MatrixComponent } from './projects/matrix/matrix.component';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,15 @@ import { PokedexComponent } from './projects/pokedex/pokedex.component';
     ContactMeComponent,
     LoginPageComponent,
     HomeComponent,
-    PokedexComponent
+    PokedexComponent,
+    MatrixComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterLink,
+    RouterLinkActive
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,14 +7,19 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
-
+  
   navLinks = [
-    { label: 'Login', route: '/' },
     { label: 'Home', route: '/home' },
     { label: 'About', route: '/about' },
     { label: 'Projects', route: '/projects' },
     { label: 'Contact', route: '/contact' }
   ];
+  // navLinks = [
+  //   { label: 'Login', route: '/' },
+  //   { label: 'Home', route: '/home' },
+  //   { label: 'About', route: '/about' },
+  //   { label: 'Projects', route: '/projects' },
+  //   { label: 'Contact', route: '/contact' }
+  // ];
 
 }

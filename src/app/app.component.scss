@@ -1,0 +1,15 @@
+:host {
+  display: block; // Ensures the host component takes up space
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ // overflow: hidden; // Prevent scrollbars if content overflows
+  z-index: -1; // Place behind other content
+}
+
+canvas {
+  display: block; // Remove extra space below canvas
+  background-color: black;
+}

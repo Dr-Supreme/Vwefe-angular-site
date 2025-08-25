@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { ProjectModel } from '../models/project-model';
 import { Observable, of } from 'rxjs';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -11,15 +12,15 @@ export class ProjectService {
       id:'pokedex',
       title: 'Project One',
       description: 'This is the first project.',
-      imageUrl: 'assets/images/project1.jpg',
+      imageUrl: '../assets/images/project1.jpg',
       route: '/projects/pokedex'
     },
     {
-      id:'p2',
+      id:'matrix',
       title: 'Project Two',
       description: 'This is the second project.',
-      imageUrl: 'assets/images/project2.jpg',
-      route: '/projects/project-two'
+      imageUrl: '../assests/images/matrix.jpg',
+      route: '/projects/matrix'
     },
     {
       id:'p3',
