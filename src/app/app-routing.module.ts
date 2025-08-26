@@ -20,6 +20,7 @@ const routes: Routes = [
   {
     path:'projects',
     component: ProjectsComponent,
+    //loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule) - this is for lazyloading but we need the projects to have its own module
   },
   {
     path: 'projects/pokedex',

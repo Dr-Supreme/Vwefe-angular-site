@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { ProjectModel } from '../models/project-model';
 import { Observable, of } from 'rxjs';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -10,16 +9,16 @@ export class ProjectService {
  private projects: ProjectModel[] = [
     {
       id:'pokedex',
-      title: 'Project One',
-      description: 'This is the first project.',
-      imageUrl: '../assets/images/project1.jpg',
+      title: 'Pokemon Pokedex',
+      description: 'Research your fav for pokemons',
+      imageUrl: '/images/lvp.jpeg',
       route: '/projects/pokedex'
     },
     {
-      id:'matrix',
+      id:'Matrix',
       title: 'Project Two',
-      description: 'This is the second project.',
-      imageUrl: '../assests/images/matrix.jpg',
+      description: 'Get lost in the abyss of the matrix.',
+      imageUrl: '/images/matrix.png',
       route: '/projects/matrix'
     },
     {

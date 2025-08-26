@@ -13,7 +13,8 @@ import { HomeComponent } from './overview/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { PokedexComponent } from './projects/pokedex/pokedex.component';
 import { MatrixComponent } from './projects/matrix/matrix.component';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { PreloadAllModules, RouterLink, RouterLinkActive, provideRouter, withPreloading } from '@angular/router';
+import { SideMenuComponent } from './side-menu/side-menu.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     LoginPageComponent,
     HomeComponent,
     PokedexComponent,
-    MatrixComponent
+    MatrixComponent,
+    SideMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,9 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     RouterLink,
     RouterLinkActive
   ],
-  providers: [],
+  providers:[],
+  // providers: [provideRouter(withPreloading(PreloadAllModules))],
+  // this above is how to enable preloading of lazy loaded modules, to load all lazy loaded component right after the page first loads
   bootstrap: [AppComponent]
 })
 export class AppModule { }
