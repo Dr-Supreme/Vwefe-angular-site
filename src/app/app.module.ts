@@ -15,6 +15,7 @@ import { PokedexComponent } from './projects/pokedex/pokedex.component';
 import { MatrixComponent } from './projects/matrix/matrix.component';
 import { PreloadAllModules, RouterLink, RouterLinkActive, provideRouter, withPreloading } from '@angular/router';
 import { SideMenuComponent } from './side-menu/side-menu.component';
+import { ColorPickerComponent } from './projects/color-picker/color-picker.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
     HomeComponent,
     PokedexComponent,
     MatrixComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    ColorPickerComponent
   ],
   imports: [
     BrowserModule,

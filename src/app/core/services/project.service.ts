@@ -22,11 +22,11 @@ export class ProjectService {
       route: '/projects/matrix'
     },
     {
-      id:'p3',
-      title: 'Project Three',
-      description: 'This is the third project.',
-      imageUrl: 'assets/images/project3.jpg',
-      route: '/projects/project-three'
+      id: 'color-picker',
+      title: 'Color Picker',
+      description: 'Pick and display your favorite colors.',
+      imageUrl: '/images/color-picker.jpeg', // make a small screenshot for card
+      route: '/projects/color-picker'
     }
   ];
 

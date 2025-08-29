@@ -27,3 +27,13 @@
     text-shadow: 3px 3px 3px rgb(255, 0, 0); // Add subtle shadow for emphasis
 } 
 //this will add a highlight over the current header bar we are at
+
+.header-component{
+    //display: flex;
+    //align-items: center;
+
+    .header{
+        margin-left: 450px;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,33 @@
+<!-- <div class="color-picker-container">
+    <h1>Color Picker</h1>
+  
+    <div class="color-display" [ngStyle]="{ 'background-color': color }">
+      <p>Selected Color: {{ color }}</p>
+    </div>
+  
+    <label for="colorInput">Select a Color: </label>
+    <input
+      id="colorInput"
+      type="color"
+      [value]="color"
+      (input)="handleColorChange($event)"
+    />
+  </div> -->
+  <div class="color-picker-page" [ngStyle]="{ 'background-color': color }">
+    <div class="color-picker-container">
+      <h1>Color Picker</h1>
+  
+      <div class="color-display" [ngStyle]="{ 'background-color': color }">
+        <p>Selected Color: {{ color }}</p>
+      </div>
+  
+      <label for="colorInput">Select a Color: </label>
+      <input
+        id="colorInput"
+        type="color"
+        [value]="color"
+        (input)="handleColorChange($event)"
+        class= "color-input"
+      />
+    </div>
+  </div>

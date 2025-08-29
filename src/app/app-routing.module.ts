@@ -7,6 +7,7 @@ import { AboutMeComponent } from './about/about-me/about-me.component';
 import { ContactMeComponent } from './contact/contact-me/contact-me.component';
 import { PokedexComponent } from './projects/pokedex/pokedex.component';
 import { MatrixComponent } from './projects/matrix/matrix.component';
+import { ColorPickerComponent } from './projects/color-picker/color-picker.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: 'projects/matrix',
     component: MatrixComponent
+  },
+  {
+    path:'projects/color-picker',
+    component: ColorPickerComponent
   },
   {
     path: 'about',
