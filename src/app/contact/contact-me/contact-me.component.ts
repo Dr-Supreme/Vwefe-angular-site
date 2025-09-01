@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './contact-me.component.scss'
 })
 export class ContactMeComponent {
+    // Track which accordion item is currently open
+  openSection: string | null = null;
 
+  toggleSection(section: string) {
+    this.openSection = this.openSection === section ? null : section;
+  }
 }

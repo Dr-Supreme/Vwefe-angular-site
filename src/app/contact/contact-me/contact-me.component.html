@@ -1,1 +1,35 @@
-<p>contact-me works!</p>
+<div class="accordion">
+    <!-- Email Accordion -->
+    <div class="accordion-item">
+      <div class="accordion-header" (click)="toggleSection('email')">
+        <h3>Contact me via Email</h3>
+      </div>
+      <div class="accordion-body" *ngIf="openSection === 'email'">
+        <p>youremail&#64;example.com</p>
+        <img src="assets/email-placeholder.png" alt="Email Icon" />
+      </div>
+    </div>
+  
+    <!-- Phone Accordion -->
+    <div class="accordion-item">
+      <div class="accordion-header" (click)="toggleSection('phone')">
+        <h3>Contact me via Phone</h3>
+      </div>
+      <div class="accordion-body" *ngIf="openSection === 'phone'">
+        <p>+1 (555) 123-4567</p>
+        <img src="assets/phone-placeholder.png" alt="Phone Icon" />
+      </div>
+    </div>
+  
+    <!-- LinkedIn Accordion -->
+    <div class="accordion-item">
+      <div class="accordion-header" (click)="toggleSection('linkedin')">
+        <h3>Contact me via LinkedIn</h3>
+      </div>
+      <div class="accordion-body" *ngIf="openSection === 'linkedin'">
+        <p>linkedin.com/in/yourname</p>
+        <img src="assets/linkedin-placeholder.png" alt="LinkedIn Icon" />
+      </div>
+    </div>
+  </div>
+  

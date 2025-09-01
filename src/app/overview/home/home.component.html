@@ -1,1 +1,29 @@
-<p>this is the home works!</p>
+<main>
+    <div>
+    <div class="home-component">
+      <h1 class="header">Full-Stack Developer</h1>
+      <h4>Isaac Ojigho</h4>
+
+      <div>
+        <p class="intro">Welcome to my personal website! I'm Isaac Ojigho, a passionate full-stack developer with expertise in building dynamic and responsive web applications. Explore my projects, skills, and get in touch!</p>
+        <div>
+            Senior Software Developer with 5+ years of experience designing and deploying enterprise solutions, including scalable RESTful APIs and
+            microservices in C# and .NET. Proficient in Azure (APIM, Function Apps, SQL, Entra ID, T-Vaults) and AWS, with expertise in Docker, Kubernetes
+            (EKS), and database design (SQL, DynamoDB, Redis). Skilled in CI/CD with GitHub Actions and experienced in agile environments. A
+            collaborative team player with a growth mindset, passionate about problem-solving, mentoring, and driving modernization initiatives.</div>
+      </div>
+
+      
+     
+      <ul class="nav">
+        <!-- @for (link of navLinks; track link.route) { -->
+          <li>
+            <!-- <a [routerLink]="link.route" routerLinkActive="active-link">{{ link.label }}</a> -->
+            <!-- <a [routerLink]="link.route">{{ link.label }}</a> -->
+          </li>
+        <!-- } -->
+      </ul>
+    </div>
+      <router-outlet></router-outlet> <!-- Added router outlet -->
+    </div>
+</main>
